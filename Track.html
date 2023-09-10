@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Coming Soon</title>
+	<style>
+		body {
+			background-color: black;
+			color: white;
+            font-family: Arial, Helvetica, sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>Coming Soon...</h1>
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tracker</title>
+	<link rel="stylesheet" href="Track.css">
+</head>
+<body>
+	
+	<h2>Tracker</h2>
+	<div class="container">
+		<h4>Your estimated change <br> in carbon footprint</h4>
+		<h1 id="balance">0.00 kg CO2e/month</h1>
+		<div class="currentmonth-pastmonth-container">
+			<div>
+				<h5>CURRENT MONTH</h5>
+				<p id="estimation-plus" class="estimation-plus">
+					+0.00 kg CO2e/month
+				</p>
+			</div>
+			<div>
+				<h5>PAST MONTH</h5>
+				<p id="estimation-minus" class="estimation-minus">
+					-0.00 kg CO2e/month
+				</p>
+			</div>
+		</div>
+
+
+		<h3>History</h3>
+		<ul id="list" class="list">
+			<!-- <li class="minus">
+				Cash <span>-100.00 kg CO2e/month</span><button class="delete-btn">x</button>
+			</li> -->
+		</ul>
+
+		<h3>Add New Transition</h3>
+		<form id="form">
+			<div class="form-control">
+				<label for="Text">Text</label>
+				<input type="text" id="text" placeholder="Enter Text...">
+			</div>
+			<div class="form-control">
+				<label for="amount">Amount</label>
+				<input type="number" id="amount" placeholder="Enter amount...">
+			</div>
+			<button class="btn">All Estimations</button>
+		</form>
+	</div>
+	<!-- JavaScript File -->
+	<script src="Track.js"></script>
+</body>
+</html>

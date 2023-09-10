@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculate.css">
+    <style>
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="https://drive.google.com/uc?id=1NsM2lD9yihDXOSmFyR6XwY-Xe5ZAMVVF" type="video/mp4">
+    </video>
+    <div class="container">
+        <h1>Carbon Footprint Calculator</h1>
+        <form id="carbon-form" action="/calculate" method="post">
+            <label for="electricity">Electricity consumption (kWh/month):</label>
+            <input type="number" id="electricity" name="electricity"><br><br>
+            <label for="diesel">Diesel consumption (litres/month):</label>
+            <input type="number" id="diesel" name="diesel"><br><br>
+            <label for="petrol">Petrol consumption (litres/month):</label>
+            <input type="number" id="petrol" name="petrol"><br><br>
+            <label for="lpg">LPG consumption (kg/month):</label>
+            <input type="number" id="lpg" name="lpg"><br><br>
+            <label for="transportation">Transportation distance (km/year):</label>
+            <input type="number" id="transportation" name="transportation"><br><br>
+            <label for="waste">Waste generated (kg/month):</label>
+            <input type="number" id="waste" name="waste"><br><br>
+            <label for="food">Food consumption (kg/month):</label>
+            <input type="number" id="food" name="food"><br><br>
+            <label for="phone">Phone usage (hours/day):</label>
+            <input type="number" id="phone" name="phone"><br><br>
+            <label for="appliance">Appliance usage (hours/day):</label>
+            <input type="number" id="appliance" name="appliance"><br><br>
+            <input type="button" value="Calculate" onclick="calculateCarbonFootprint()">
+        </form>
+    </div>
+
+    <script src="calculate.js"></script>
+</body>
+</html>

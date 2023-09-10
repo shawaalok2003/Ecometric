@@ -1,0 +1,187 @@
+body {
+	background-color: black;
+	margin: 0;
+	padding: 0;
+    font-family: 'Bahnschrift Semibold', Arial, sans-serif;
+    text-decoration: none;
+}
+
+header {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    text-decoration: none;
+}
+
+header h1 {
+	margin: 0;
+    margin-left: 40px; /* Shifts "EcoMetric" to the right */
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+}
+
+nav li {
+	margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #19d432;
+}
+
+nav .signup {
+	color: white;
+	background-color: rgb(0, 119, 255);
+	padding: 10px 20px;
+	border-radius: 10px;
+	transition: opacity 0.3s ease;
+}
+
+nav .signup:hover {
+	opacity: 0.8;
+}
+
+main {
+	color: white;
+	padding: 20px;
+    text-decoration: none;
+}
+
+footer {
+	background: linear-gradient(to right, #0231ff, #8723eb, #222);
+	color: white;
+	padding: 14px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+main {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: left; /* Added this property to align text to left */
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.normal {
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+
+.calculate {
+    background-color: rgb(0, 102, 255);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.calculate:hover {
+    background-color: #00ff26;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 10px;
+  }
+
+.empty {
+    color: black;
+  }
+
+main {
+    width: 70%;
+    float: left;
+    text-decoration: none;
+  }
+  
+img {
+	height: 660px;
+    width: 700px;
+    float: right;
+    margin-right: 120px;
+	margin-top: -660px;
+  }
+
+  .home-icon {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-icon a {
+    left: 45px;
+    bottom: 40px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.home-icon a:hover {
+    color: black;
+}
+
+.home-icon a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.home-icon a:hover::before {
+    width: 100%;   
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <style>
+      /* Set the video element to cover the entire screen */
+      #background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+      /* Make the login box transparent */
+      .bg-white-translucent {
+        background-color: rgba(255, 255, 253, 0.75);
+      }
+      /* Add margin between signup message and forgot password link */
+      .signup-message {
+        margin-top: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop id="background-video">
+      <source src="https://drive.google.com/uc?id=1dV6PfHU4qbKwwi3uxdZMBvc0JzrxuWTC" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="relative h-screen">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="bg-white-translucent p-8 rounded-md shadow-lg z-10">
+          <h2 class="text-center text-black-700 font-bold text-xl mb-6">Login</h2>
+          <form method="post">
+            <div class="mb-4">
+              <label class="block text-black-700 font-bold mb-2" for="email">
+                Email
+              </label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" id="email" type="email" placeholder="Email">
+            </div>
+            <div class="mb-4">
+              <label class="block text-black-700 font-bold mb-2" for="password">
+                Password
+              </label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-lg" id="password" type="password" placeholder="Password">
+            </div>
+            <div class="flex items-center justify-between">
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                <a href="index.html">Sign In</a>
+              </button>
+              <a class="inline-block align-baseline font-bold text-sm text-black-500 hover:text-black-800" href="#">
+                Forgot Password?
+              </a>
+            </div>
+            <div class="signup-message text-center">
+              <p style="font-weight: bold;">New User? <a href="signup.html" class="font-bold text-blue-500 hover:text-blue-700">Sign-Up</a></p>
+            </div>          
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
